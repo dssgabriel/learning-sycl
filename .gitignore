@@ -1,0 +1,6 @@
+# Directories to ignore
+target/
+.cache/
+
+# Files to ignore
+compile_commands.json
