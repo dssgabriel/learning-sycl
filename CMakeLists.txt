@@ -1,7 +1,7 @@
 # Support a range of CMake versions, starting form C++20 support
 cmake_minimum_required(VERSION 3.12...3.24)
 
-project(learn-sycl
+project(learning-sycl
   VERSION 0.1.0
   DESCRIPTION "Learning SYCL and comparing performance"
   LANGUAGES CXX)
@@ -21,6 +21,6 @@ add_library(kernels OBJECT include/kernels.hpp)
 target_include_directories(kernels PUBLIC include)
 target_compile_features(kernels PUBLIC cxx_std_17)
 
-add_executable(learn-sycl src/main.cpp)
-target_link_libraries(learn-sycl PUBLIC utils kernels)
-target_compile_features(learn-sycl PUBLIC cxx_std_17)
+add_executable(learning-sycl src/main.cpp)
+target_link_libraries(learning-sycl PUBLIC utils kernels)
+target_compile_features(learning-sycl PUBLIC cxx_std_17)

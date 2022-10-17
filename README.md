@@ -12,9 +12,9 @@ cmake -S . -B target -DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx
 cmake --build target
 ```
 
-You can then execute the binary `target/learn-sycl`.
+You can then execute the binary `target/learning-sycl`.
 Note that currently, the program only benchmarks a classic SAXPY kernel.
 You must specify the length of the vectors from the command line when running the application, e.g.:
 ```
-target/learn-sycl 1048576
+target/learning-sycl 1048576
 ```
