@@ -62,7 +62,7 @@ BraceWrapping:
   AfterClass: false
   AfterControlStatement: Never
   AfterEnum: false
-  AfterFunction: true
+  AfterFunction: false
   AfterObjCDeclaration: false
   AfterStruct: false
   AfterUnion: false
@@ -100,6 +100,11 @@ BreakBeforeTernaryOperators: false
 # Allow breaking on long string literals.
 BreakStringLiterals: true
 
+# Always break after template declaration
+# BreakTemplateDeclaration: Always
+
+# Always break before concept declaration (after template decl)
+BreakBeforeConceptDeclarations: Always
 
 # --------------------------------------------------------------------------- #
 # Indenting behavior                                                          #
@@ -115,6 +120,9 @@ IndentPPDirectives: BeforeHash
 
 # Do not indent if a function definition or declaration is wrapped after the type.
 IndentWrappedFunctionNames: false
+
+# Always indent inside namespaces
+NamespaceIndentation: All
 
 
 # --------------------------------------------------------------------------- #
